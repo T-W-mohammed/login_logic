@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab 3</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="container">
+	<h2>	We Have Two Forms Here . <br> Click On The Buttons <br/>To Sign Up Or To Sign In </h2>
+<h1>	
+
+
+		<button onclick="displayForm('singUp')">sign Up</button>
+		 <span>          </span>
+		 <button onclick="displayForm('signIn')">sign In</button></h1>
+</div>
+
+<div class="container containerForm">
+	<section class="singUp" style="display: inline-block;">
+		<h2>Sign Up</h2>
+		<form >
+			<p class="userExist"></p>
+			<input type="text" id="text"  placeholder="enter your name to sign up " name="text">
+			<p class="text"></p>
+			<input type="password" id="number" placeholder="enter your password to sign up " name="number">
+			<p class="number"></p>
+			<button type="submit" onclick="check_Validation_signUp(event)">Submit</button>
+			
+		</form>
+	</section>
+	<section class="signIn" style="display:inline-block;">
+		<h2>Sign in</h2>
+		<form >
+			<p class="userExists"></p>
+			<input type="text" id="texts"  placeholder="enter your name to sign in " name="text">
+			<p class="texts"></p>
+			<input type="text" id="numbers" placeholder="enter your password to sign in" name="number">
+			<p class="numbers"></p>
+			<button type="submit" onclick="check_Validation_signIn(event)">Submit</button>
+			
+		</form>
+	</section>
+
+</div>
+
+
+<script src="index.js"> 
+</script>
+</body>
+</html>
